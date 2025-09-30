@@ -1,1 +1,1 @@
-printf("hola tercer semestre")
+print("hola tercer semestre")
