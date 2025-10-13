@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+</head>
+<body>  
+    <h1>Registro de Pacientes</h1>
+    <form action="procesar.php" method="post">
+        <table border="0">
+            <tr>
+                <th>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </th>
+                <th>
+                    <label for="correo">Correo Electronico:</label>
+                    <input type="email" id="correo" name="correo">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </th>
+                <th>
+                    <label for="cedula">Número de cédula:</label>
+                    <input type="text" id="cedula" name="cedula" maxlength="10" placeholder=>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="genero">Genero:</label>
+                    <input type="radio" id="m" name="genero" value="m"><label for="m">Masculino</label>
+                    <input type="radio" id="f" name="genero" value="f"><label for="f">Femenino</label>
+                </td>
+                <td>
+                    <label for="objetivo">Objetivo Nutricional:</label>
+                    <select id="objetivo" name="objetivo">
+                        <option value="perder_peso">Perder Peso</option>
+                        <option value="ganar_musculo">Ganar Musculo</option>
+                        <option value="mantener_peso">Mantener Peso</option>
+                        <option value="mejorar_salud">Mejorar Salud</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
