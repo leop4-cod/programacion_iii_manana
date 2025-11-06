@@ -1,2 +1,2 @@
-let mensaje: string ="Hello from Typescript"
+let mensaje: string = "Hello from TypeScript";
 console.log(mensaje)
