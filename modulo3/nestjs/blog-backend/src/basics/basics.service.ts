@@ -1,10 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Body, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class BasicsService {
+
     getMyFirstGet(): object {
         return {
-            service: 'Blog Backend',
+            service: 'Blog-Backend',
             controller: '/basics',
             function: 'Get Example'
         };
@@ -12,18 +13,18 @@ export class BasicsService {
 
     getConParametros(parametro: string): object {
         return {
-            service: 'Blog Backend',
+            service: 'Blog-Backend',
             controller: '/basics/:parametro',
-            function: 'Get con Parametros',
+            function: 'Get Example',
             parametroRecibido: parametro
         };
     }
 
     postFunction(bodyPost: object): object {
         return {
-            service: 'Blog Backend',
+            service: 'Blog-Backend',
             controller: '/basics tipo post',
-            function: 'Ejemplo de petición Post',
+            function: 'Ejemplo de peticion Post',
             bodyRecibido: bodyPost
         };
     }
@@ -31,8 +32,8 @@ export class BasicsService {
     putFunction(bodyPost: object, parametro: string): object {
         return {
             service: 'Blog-Backend',
-            controller: '/basics tipo put',
-            function: 'Ejemplo de petición Put',
+            controller: '/basics tipo post',
+            function: 'Ejemplo de peticion Put',
             bodyRecibido: bodyPost,
             parametro: parametro
         };
@@ -41,9 +42,32 @@ export class BasicsService {
     deleteFunction(parametro: string): object {
         return {
             service: 'Blog-Backend',
-            controller: '/basics tipo delete',
-            function: 'Ejemplo de petición Delete',
+            controller: '/basics tipo post',
+            function: 'Ejemplo de peticion Delete',
             parametro: parametro
         };
+    }
+
+    calculoTriangulo(body: any): object {
+        const result: number = (body.base*body.altura) / 2
+        return {
+            service: 'Blog-Backend',
+            controller: '/basics tipo delete',
+            function: 'Ejemplo de peticion Delete',
+            parametro: body,
+            resultado: result
+        }
+    }
+
+    calculoRectangulo(ancho: number, alto: number): object {
+        const result: number = ancho * alto
+        return {
+            service: 'Blog-Backend',
+            controller: '/basics tipo delete',
+            function: 'calculo-area-rectangulo/:ancho/:alto',
+            alto,
+            ancho,
+            resultado: result
+        }
     }
 }

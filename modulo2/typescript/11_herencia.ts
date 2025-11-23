@@ -4,14 +4,13 @@ export class Vehiculo {
     constructor(
         marca: string,
         tipo: string
-    ) {
-        this.marca = marca;
-        this.tipo = tipo;
+    ){
+        this.marca=marca;
+        this.tipo=tipo;
 
     }
-    moverse(): void {
+    moverse(): void{
         console.log('vehiculo en movimiento');
     }
 }
-
-export class Moto extends Vehiculo { }
+export class Moto extends Vehiculo {} 
