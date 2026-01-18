@@ -1,12 +1,10 @@
-import MoverCaja from "./useRef/MoverCaja";
-
-
+import ListaUsuariosPaginado from "./formularios/ListaUsuariosPaginado";
 
 
 function App() {
   return (
     <>
-      <MoverCaja/>
+      <ListaUsuariosPaginado />
     </>
   );
 }

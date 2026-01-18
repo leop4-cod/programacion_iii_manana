@@ -1,11 +1,28 @@
 {
-  "dependencies": {
-    "@nestjs/jwt": "^11.0.1",
-    "@nestjs/passport": "^11.0.5",
-    "passport": "^0.7.0",
-    "passport-jwt": "^4.0.1"
+  "name": "programacion_iii_manana-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "miniserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "@types/passport-jwt": "^4.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leop4-cod/programacion_iii_manana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leop4-cod/programacion_iii_manana/issues"
+  },
+  "homepage": "https://github.com/leop4-cod/programacion_iii_manana#readme",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.7",
+    "axios": "^1.13.2",
+    "react-router-dom": "^7.12.0"
   }
 }

@@ -1,9 +1,9 @@
 export default function ConditionalText() {
-  const isLoggedIn = true;
+    const isLoggedIn = false;
 
-  return (
-    <p>
-      {isLoggedIn ? 'Bienvenido de nuevo' : 'Por favor inicia sesión'}
-    </p>
-  );
+    return (
+        <p>
+            {isLoggedIn ? 'Bienvenido de nuevo' : 'Por favor inicia sesión'}
+        </p>
+    );
 }

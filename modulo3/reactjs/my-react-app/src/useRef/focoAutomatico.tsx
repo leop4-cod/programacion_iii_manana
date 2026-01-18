@@ -1,18 +1,22 @@
-
-import { useEffect, useRef } from 'react';
+import { useRef, useEffect } from "react";
 
 export default function FocoAutomatico() {
-  const inputRef = useRef(null); // Creamos una referencia vacía
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
-  useEffect(() => {
-    // Al montar el componente, enfocamos el input
-    inputRef.current.focus();
-  }, []);
+    useEffect(() => {
+        if (inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, []);
 
-  return (
-    <div>
-      <label>Nombre: </label>
-      <input ref={inputRef} placeholder="Escribe tu nombre aquí..." />
-    </div>
-  );
-}XMLDocument
+    return (
+        <div>
+            <label> Nombre: </label>
+            <input placeholder="Escribe tu nombre aquí..." ref={inputRef} />
+            <br />
+            <label> Apellido: </label>
+            <input placeholder="Escribe tu apellido aquí..." ref={inputRef} />
+            <br />
+        </div>
+    );
+}
